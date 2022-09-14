@@ -73,7 +73,7 @@
         }
       }
     },
-    "label": {
+    "description": {
       "pluginOptions": {
         "i18n": {
           "localized": false
