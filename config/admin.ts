@@ -5,6 +5,6 @@ export default ({ env }) => ({
   apiToken: {
     salt: env("API_TOKEN_SALT"),
   },
-  url: "dashboard",
-  port: env("ADMIN_PORT", 23080),
+  url: "dashboard"
 });
+
