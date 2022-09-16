@@ -4,7 +4,8 @@
   "info": {
     "singularName": "home-information",
     "pluralName": "home-informations",
-    "displayName": "HomeInformation"
+    "displayName": "HomeInformation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -40,11 +41,12 @@
       "type": "text"
     },
     "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -71,6 +73,14 @@
         }
       },
       "type": "string"
+    },
+    "order": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer"
     }
   }
 }
