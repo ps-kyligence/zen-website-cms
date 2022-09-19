@@ -25,7 +25,7 @@
       "type": "string",
       "required": true
     },
-    "summery": {
+    "summary": {
       "pluginOptions": {
         "i18n": {
           "localized": false
