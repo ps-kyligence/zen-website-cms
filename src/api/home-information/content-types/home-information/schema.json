@@ -63,7 +63,9 @@
       "enum": [
         "default",
         "strong",
-        "top"
+        "top",
+        "bottom",
+        "other"
       ]
     },
     "link": {
@@ -81,6 +83,14 @@
         }
       },
       "type": "integer"
+    },
+    "code": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }
