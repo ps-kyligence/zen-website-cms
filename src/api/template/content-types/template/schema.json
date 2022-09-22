@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "targets",
+  "collectionName": "templates",
   "info": {
-    "singularName": "target",
-    "pluralName": "targets",
-    "displayName": "Target",
+    "singularName": "template",
+    "pluralName": "templates",
+    "displayName": "Template",
     "description": ""
   },
   "options": {
@@ -25,14 +25,6 @@
       "type": "string",
       "required": true
     },
-    "summary": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "richtext"
-    },
     "code": {
       "pluginOptions": {
         "i18n": {
@@ -41,7 +33,7 @@
       },
       "type": "string"
     },
-    "tag": {
+    "description": {
       "pluginOptions": {
         "i18n": {
           "localized": false
@@ -49,15 +41,7 @@
       },
       "type": "string"
     },
-    "content": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      },
-      "type": "richtext"
-    },
-    "cover": {
+    "image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -70,18 +54,26 @@
         }
       }
     },
-    "description": {
+    "summary": {
       "pluginOptions": {
         "i18n": {
           "localized": false
         }
       },
-      "type": "string"
+      "type": "richtext"
+    },
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "richtext"
     },
     "contributors": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "type": "string"
@@ -103,6 +95,18 @@
       },
       "type": "boolean",
       "default": false
+    },
+    "template_category": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::template-category.template-category",
+      "inversedBy": "templates"
+    },
+    "template_tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::template-tag.template-tag",
+      "inversedBy": "templates"
     }
   }
 }

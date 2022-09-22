@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "template_categories",
+  "info": {
+    "singularName": "template-category",
+    "pluralName": "template-categories",
+    "displayName": "TemplateCategory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "zh_name": {
+      "type": "string"
+    },
+    "en_name": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "min": 0
+    },
+    "templates": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::template.template",
+      "mappedBy": "template_category"
+    }
+  }
+}
