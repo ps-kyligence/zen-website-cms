@@ -4,7 +4,7 @@
   "info": {
     "singularName": "home-information",
     "pluralName": "home-informations",
-    "displayName": "HomeInformation",
+    "displayName": "Information",
     "description": ""
   },
   "options": {
@@ -85,6 +85,14 @@
       "type": "integer"
     },
     "code": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
+    },
+    "page": {
       "pluginOptions": {
         "i18n": {
           "localized": false
